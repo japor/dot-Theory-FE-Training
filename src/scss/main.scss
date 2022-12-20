@@ -13,13 +13,13 @@ a {
 }
 
 body {
-    background-color:aliceblue;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
 .box {
@@ -27,6 +27,7 @@ body {
     border-radius: 3px;
     padding: 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
     &-content {
         margin-top: 10px;
         margin-bottom: 20px;
@@ -39,7 +40,7 @@ header {
         width: 100%;
         background-color: #78322e;
         padding: 15px 0;
-        
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -47,9 +48,11 @@ header {
 
             .social-media {
                 width: 130px;
+
                 ul {
                     display: flex;
                     justify-content: space-between;
+
                     i {
                         color: white;
                     }
@@ -62,6 +65,7 @@ header {
         background-color: white;
         color: black;
         padding: 25px 0;
+
         // background-image: url('../../src/images/hero_bg.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
@@ -69,8 +73,9 @@ header {
         // height: calc(100vh - 71px);
         &__wrapper {
             display: flex;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
+
             .logo {
                 font-size: 25px;
             }
@@ -78,12 +83,14 @@ header {
             .nav {
                 ul {
                     display: flex;
+
                     li:not(:last-child) {
                         padding-right: 20px;
                     }
 
                     a {
                         color: black;
+
                         &:hover {
                             color: blue;
                         }
@@ -96,48 +103,62 @@ header {
 
 .main {
     padding: 30px 0;
+
     &__wrapper {
         display: flex;
         gap: 15px;
         justify-content: space-between;
+
         .content {
             flex-grow: 1;
 
             .blog-item {
                 margin-bottom: 20px;
-                .blog-header { 
-                    .author, .date-published {
+
+                .blog-header {
+
+                    .author,
+                    .date-published {
                         color: rgb(151, 149, 149);
                         font-size: 12px;
                     }
                 }
+
                 .blog-content {
                     margin-top: 15px;
                     display: flex;
                     gap: 15px;
+
                     img {
                         width: 150px;
                         height: 150px;
                     }
                 }
+
                 .blog-footer {
                     display: flex;
                     justify-content: space-between;
-                    margin-top: 10px;;
+                    margin-top: 10px;
+                    ;
+
                     .tags {
                         color: rgb(151, 149, 149);
                         font-size: 12px;
+
                         i {
-                            margin-right: 5px;;
+                            margin-right: 5px;
+                            ;
                         }
                     }
+
                     .sharer {
                         ul {
                             display: flex;
                             gap: 10px;
+
                             li {
                                 a {
-                                    color:rgb(49, 49, 49);
+                                    color: rgb(49, 49, 49);
                                 }
                             }
                         }
@@ -151,7 +172,8 @@ header {
 
             .category {
                 width: 100%;
-                li a{
+
+                li a {
                     color: rgb(49, 49, 49);
                     display: block;
                     border-bottom: 1px solid rgb(187, 187, 187);
@@ -159,15 +181,17 @@ header {
                     font-weight: 600;
                     display: flex;
                     justify-content: space-between;
+
                     span {
-                        color:  rgb(187, 187, 187);
+                        color: rgb(187, 187, 187);
                     }
 
                     &:hover {
                         font-weight: bold;
                         border-bottom: 1px solid rgb(49, 49, 49);
+
                         span {
-                            color:  rgb(49, 49, 49);
+                            color: rgb(49, 49, 49);
                         }
                     }
                 }
@@ -187,27 +211,30 @@ footer,
         color: white;
     }
 
-    &__wrapper{
+    &__wrapper {
         .nav {
             .footer-nav {
                 display: flex;
                 justify-content: space-between;
             }
         }
-        
+
         .social-media {
             margin-top: 45px;
             text-align: center;
+
             h3 {
                 color: gold;
                 text-transform: uppercase;
-               
+
             }
+
             ul {
                 margin-top: 15px;
                 display: flex;
                 justify-content: center;
                 gap: 25px;
+
                 li {
                     a {
                         font-size: 30px;
@@ -222,5 +249,15 @@ footer,
             justify-content: space-between;
         }
     }
-    
+
+}
+
+.single-blog {
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    p:not(:first-child) {
+        margin-top: 25px;
+    }
 }
