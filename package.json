@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --output-style compressed -o dist/css src/scss",
-    "watch": "node-sass -w src/scss -o dist/css"
+    "build": "node-sass -o dist/css src/scss",
+    "watch": "node-sass -watch -o dist/css src/scss"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^8.0.0"
   }
 }
